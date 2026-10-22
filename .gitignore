@@ -1,0 +1,33 @@
+# ===== Secrets — NEVER commit =====
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+wheels/
+
+# ===== Virtual environments =====
+.venv/
+venv/
+env/
+
+# ===== Data / model artifacts (usually too big for git) =====
+*.sqlite
+*.db
+chroma/
+.chroma/
+*.faiss
+data/raw/
+
+# ===== Editor / OS =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
